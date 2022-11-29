@@ -46,6 +46,48 @@ a {
   color: var(--grey);
 }
 
+/*--------- HEADER ----------*/
+.header,
+footer {
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+
+  top: 0;
+  position: sticky;
+}
+
+.left-content,
+.right-content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.left-content {
+  justify-content: flex-start;
+}
+
+.right-content {
+  justify-content: flex-end;
+}
+
+.right-content > a {
+  display: none;
+}
+
+#burger-menu {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url(./assets/assets/eth.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*--------- END HEADER ----------*/
+
 /*---------FOOTER----------*/
 footer {
   bottom: 0;
