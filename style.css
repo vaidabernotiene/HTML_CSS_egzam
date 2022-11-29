@@ -1,48 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*------------- BASIC ----------*/
 :root {
-    --grey: #555555;
-    --purple: #ff3998;
-    --black: #111111;
-    --orange: #ff8139;
-    --lightgrey: #eeeeee;
-    --white: #ffffff;
-    --padding: 0 5%;
-  }
-  
-  html {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-  }
-  
-  header,
-  footer {
-    background-color: var(--white);
-    top: 0;
-    position: sticky;
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  header,
-  footer,
-  .launching-soon,
-  .companies-logos,
-  .auction,
-  .launching-soon-bottom,
-  .nftlanding-bottom {
-    padding: var(--padding);
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--grey);
-  }
-  
+  --grey: #555555;
+  --purple: #ff3998;
+  --black: #111111;
+  --orange: #ff8139;
+  --lightgrey: #eeeeee;
+  --white: #ffffff;
+  --padding: 0 5%;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+header,
+footer {
+  background-color: var(--white);
+  top: 0;
+  position: sticky;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header,
+footer,
+.launching-soon,
+.companies-logos,
+.auction,
+.launching-soon-bottom,
+.nftlanding-bottom {
+  padding: var(--padding);
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+/*---------FOOTER----------*/
+footer {
+  bottom: 0;
+}
+
+.copy-right p:first-of-type {
+  font-size: 22px;
+}
+
+.copy-right p:last-of-type {
+  display: none;
+}
