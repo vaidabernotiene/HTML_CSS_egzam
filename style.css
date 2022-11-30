@@ -307,3 +307,109 @@ footer {
   display: none;
 }
 
+/*-------------TABLET&SCREEN Design-------------  */
+@media screen and (min-width: 768px) {
+  /* Header */
+  .right-content > a {
+    display: inline-block;
+  }
+
+  .right-content a:last-child {
+    color: var(--purple);
+  }
+
+  #burger-menu {
+    display: none;
+  }
+
+  /*------- Main -------*/
+  h1 {
+    font-size: 80px;
+    font-weight: 900;
+  }
+
+  .launching-soon {
+    background-position: 110%;
+    background-size: 530px 500px;
+  }
+
+  .right-launching-soon {
+    gap: 10px;
+  }
+
+  /*-------- NFT like ------ */
+  .free-nft {
+    height: 200px;
+    background-image: url(./assets/assets/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: var(--padding);
+  }
+
+  .free-nft p {
+    color: var(--black);
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  .free-nft h3 {
+    font-size: 30px;
+  }
+
+  /*-------- Companies logos ------------ */
+  .companies-logos {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  /*---------- Lauching soon Bottom --------*/
+.bottom{
+  height: 500px;
+}
+
+  /*---------- NFT landing Bottom ----------*/
+  .nftlanding-bottom {
+    display: grid;
+    grid-template-areas: "left right";
+    margin: 50px 0;
+  }
+
+  .bottom-content {
+    grid-area: left;
+  }
+
+  .bottom-links-row {
+    grid-area: right;
+    
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .link-box{
+    gap: 15px;
+  }
+
+  .link-box > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /*----------- Footer ----------*/
+  .copy-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copy-right p:first-of-type {
+    font-size: 18px;
+    float: left;
+  }
+
+  .copy-right p:last-of-type {
+    display: inline;
+  }
+}
