@@ -22,8 +22,6 @@ html {
 header,
 footer {
   background-color: var(--white);
-  top: 0;
-  position: sticky;
 }
 
 ul {
@@ -46,14 +44,11 @@ a {
 }
 
 /*--------- HEADER ----------*/
-.header{
+.header {
   height: 90px;
 
   display: flex;
   align-items: center;
-
-  top: 0;
-  position: sticky;
 }
 
 .left-content,
@@ -105,10 +100,10 @@ a {
 }
 
 .launching-soon {
-  height: 500px;
+  height: 600px;
   display: flex;
   background-image: url(./assets/assets/graphic.png);
-  background-position: 180% -10%;
+  background-position: 140% -10%;
   background-size: 415px 400px;
   background-repeat: no-repeat;
 }
@@ -118,7 +113,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px 0;
   gap: 20px;
 }
 
@@ -198,12 +192,12 @@ a {
 
 .auction-cards {
   display: grid;
-  grid-template-columns: repeat(4, 4fr);
+  grid-template-columns: repeat(4, 200px);
   gap: 20px;
 }
 
 .card {
-  background-color: green;
+  background-color: #eeeeee;
   border-radius: 5%;
 }
 
@@ -224,8 +218,13 @@ a {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin: 20px;
+  margin: 10px;
   gap: 5px;
+}
+
+.card-left p,
+.price-row h5 {
+  font-size: 12px;
 }
 
 .card-left h6 {
@@ -238,25 +237,23 @@ a {
 
 .price-row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .price-row img {
+  float: right;
   margin-right: 10px;
-}
-
-.price-row h5 {
-  font-size: 15px;
 }
 
 /*-------- Lauching soon Bottom-------*/
 .bottom {
-  height: auto;
   background-image: url(./assets/assets/upsell-footer-image.svg);
-  background-position: 150% 50%;
-  background-size: 400px 400px;
+  background-position: bottom right;
+  background-size: auto;
   background-repeat: no-repeat;
   border-bottom: 1px solid var(--lightgrey);
+  margin-top: 40px;
 }
 
 .launching-soon-bottom h6 {
@@ -309,7 +306,7 @@ footer {
 }
 
 /*-------------TABLET&SCREEN Design-------------  */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
   /* Header */
   .right-content > a {
     display: inline-block;
@@ -365,10 +362,14 @@ footer {
     grid-template-rows: repeat(1, 1fr);
   }
 
+  .auction-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   /*---------- Lauching soon Bottom --------*/
-.bottom{
-  height: 500px;
-}
+  .bottom {
+    height: 500px;
+  }
 
   /*---------- NFT landing Bottom ----------*/
   .nftlanding-bottom {
@@ -383,16 +384,16 @@ footer {
 
   .bottom-links-row {
     grid-area: right;
-    
+
     display: flex;
     justify-content: space-around;
   }
 
-  .link-box{
+  .link-box {
     gap: 15px;
   }
 
-  .link-box > ul{
+  .link-box > ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
