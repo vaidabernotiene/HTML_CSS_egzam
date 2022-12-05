@@ -46,8 +46,7 @@ a {
 }
 
 /*--------- HEADER ----------*/
-.header,
-footer {
+.header{
   height: 90px;
 
   display: flex;
@@ -295,7 +294,10 @@ footer {
 
 /*---------FOOTER----------*/
 footer {
-  bottom: 0;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
 }
 
 .copy-right p:first-of-type {
